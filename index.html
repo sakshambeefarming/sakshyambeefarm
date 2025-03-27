@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sakshyam Bee Farming</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3176FF',
+                        secondary: '#FFC107'
+                    },
+                    borderRadius: {
+                        'none': '0px',
+                        'sm': '4px',
+                        DEFAULT: '8px',
+                        'md': '12px',
+                        'lg': '16px',
+                        'xl': '20px',
+                        '2xl': '24px',
+                        '3xl': '32px',
+                        'full': '9999px',
+                        'button': '8px'
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Playfair+Display:wght@400;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css" rel="stylesheet">
+    <style>
+        :where([class^="ri-"])::before { content: "\f3c2"; }
+        .hero-bg {
+            background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+                        url('https://public.readdy.ai/ai/img_res/5e208050c860912ccc405f9e8f5e85d8.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .honeycomb-pattern {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M54.627 0l.83.828-1.415 1.415L51.8 0h2.827zM5.373 0l-.83.828L5.96 2.243 8.2 0H5.374zM48.97 0l3.657 3.657-1.414 1.414L46.143 0h2.828zM11.03 0L7.372 3.657 8.787 5.07 13.857 0H11.03zm32.284 0L49.8 6.485 48.384 7.9l-7.9-7.9h2.83zM16.686 0L10.2 6.485 11.616 7.9l7.9-7.9h-2.83zM22.343 0L13.857 8.485 15.272 9.9l9.9-9.9h-2.83zM32 0l-3.657 3.657 1.414 1.414L34.828 0H32zm-6.485 0L20.343 5.172l1.414 1.414L26.9 0h-1.386zm12.97 0l5.172 5.172-1.414 1.414L37.1 0h1.385zm-18.627 0L13.857 6.485 15.272 7.9l4.9-4.9L19.813 0h-2.83zM38.686 0L40.9 2.214v-.828l-1.415-1.415L38.687 0zm2.83 0l3.657 3.657-1.414 1.414L39.7 0h1.814zm-7.373 0L40.9 6.485 42.314 7.9l4.9-4.9L45.127 0h-2.83zm-3.657 0l8.485 8.485-1.414 1.414L28.284 0h2.83z' fill='rgba(66, 153, 225, 0.05)' fill-rule='evenodd'/%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="font-['Inter']">
+    <header class="fixed w-full bg-white/95 shadow-sm z-50">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="#" class="text-3xl font-['Training'] text-primary">Sakshyam Bee Farm</a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="hover:text-primary transition-colors">Home</a>
+                    <a href="#about" class="hover:text-primary transition-colors">About</a>
+                    <a href="#products" class="hover:text-primary transition-colors">Products</a>
+                    <a href="#services" class="hover:text-primary transition-colors">Services</a>
+                    <a href="#gallery" class="hover:text-primary transition-colors">Gallery</a>
+                    <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+                    <button class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Shop Now</button>
+                </div>
+                <button class="md:hidden w-10 h-10 flex items-center justify-center">
+                    <i class="ri-menu-line text-2xl"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-bg min-h-screen flex items-center text-white pt-16">
+            <div class="container mx-auto px-6">
+                <div class="max-w-2xl">
+                    <h1 class="text-5xl md:text-6xl font-['Playfair_Display'] font-bold mb-6">Pure Honey from Nature's Heart</h1>
+                    <p class="text-xl mb-8">Experience the finest organic honey, harvested with care and dedication from our sustainable bee farms in Pokhara.</p>
+                    <div class="flex gap-4">
+                        <button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Explore Products</button>
+                        <button class="bg-white text-primary px-8 py-3 !rounded-button hover:bg-white/90 transition-colors whitespace-nowrap">Learn More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="py-20 bg-[#F5F2E9]">
+            <div class="container mx-auto px-6">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div>
+                        <img src="https://public.readdy.ai/ai/img_res/eb24ae8439a01efe7bf2aa757fb3d9b0.jpg" alt="Beekeeper" class="rounded-lg shadow-xl w-full h-[500px] object-cover">
+                    </div>
+                    <div>
+                        <h2 class="text-4xl font-['Playfair_Display'] font-bold mb-6">Our Story</h2>
+                        <p class="text-gray-600 mb-6">Since 2023, Sakshyam Bee Farming has been dedicated to producing the highest quality honey while maintaining sustainable beekeeping practices. Our commitment to environmental stewardship and bee conservation has made us a trusted name in the industry.</p>
+                        <p class="text-gray-600 mb-8">We believe in preserving the natural essence of honey, which is why our extraction and processing methods are designed to maintain its pure, raw state - just as nature intended.</p>
+                        <button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Read More</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="py-20 honeycomb-pattern">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-['Playfair_Display'] font-bold text-center mb-12">Our Products</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <img src="https://public.readdy.ai/ai/img_res/d614d6f2ddc2c9f0baca7fa6d10c2dc6.jpg" alt="Wild Flower Honey" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Wild Flower Honey</h3>
+                            <p class="text-gray-600 mb-4">Pure, raw honey collected from wild mountain flowers.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold">Nrs. 1600/-</span>
+                                <button class="bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <img src="https://public.readdy.ai/ai/img_res/569d8653ba1db7989bc80dcad4fef2b9.jpg" alt="Raw Honeycomb" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Raw Honeycomb</h3>
+                            <p class="text-gray-600 mb-4">Fresh, natural honeycomb straight from our hives.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold">Nrs. 1200/-</span>
+                                <button class="bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white rounded-lg shadow-lg overflow-hidden hover:shadow-xl transition-shadow">
+                        <img src="https://public.readdy.ai/ai/img_res/8e5eec1dbdc99c50ee8c808d07ea14fa.jpg" alt="Honey Gift Set" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">Honey Gift Set</h3>
+                            <p class="text-gray-600 mb-4">Perfect gift set with assorted honey products.</p>
+                            <div class="flex justify-between items-center">
+                                <span class="text-lg font-bold">Nrs. 1500/-</span>
+                                <button class="bg-primary text-white px-4 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Add to Cart</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="py-20 bg-gradient-to-b from-[#F4E9D8] to-white">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-['Playfair_Display'] font-bold text-center mb-12">Our Services</h2>
+                <div class="grid md:grid-cols-3 gap-8">
+                    <div class="bg-gradient-to-br from-[#FFD700] to-[#FFA500] p-8 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                        <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center bg-white/20 rounded-full backdrop-blur-sm">
+                            <i class="ri-book-open-line text-4xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-white">Beekeeping Training</h3>
+                        <p class="text-white/90 mb-6">Learn the art of beekeeping from our experienced professionals.</p>
+                        <button class="bg-white text-[#D4A017] px-6 py-2 rounded-lg hover:bg-white/90 transition-colors whitespace-nowrap font-medium shadow-md hover:shadow-lg">Book Now</button>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-[#5E8C61] to-[#3A5A40] p-8 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                        <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center bg-white/20 rounded-full backdrop-blur-sm">
+                            <i class="ri-home-4-line text-4xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-white">Farm Visits</h3>
+                        <p class="text-white/90 mb-6">Experience beekeeping firsthand with guided tours of our farm.</p>
+                        <button class="bg-white text-[#5E8C61] px-6 py-2 rounded-lg hover:bg-white/90 transition-colors whitespace-nowrap font-medium shadow-md hover:shadow-lg">Schedule Visit</button>
+                    </div>
+
+                    <div class="bg-gradient-to-br from-[#E27D60] to-[#C38D9E] p-8 rounded-lg shadow-lg text-center transform hover:scale-105 transition-transform duration-300">
+                        <div class="w-16 h-16 mx-auto mb-6 flex items-center justify-center bg-white/20 rounded-full backdrop-blur-sm">
+                            <i class="ri-store-2-line text-4xl text-white"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-4 text-white">Wholesale Partnership</h3>
+                        <p class="text-white/90 mb-6">Partner with us for bulk honey supply and distribution.</p>
+                        <button class="bg-white text-[#E27D60] px-6 py-2 rounded-lg hover:bg-white/90 transition-colors whitespace-nowrap font-medium shadow-md hover:shadow-lg">Contact Sales</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="py-20">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-['Playfair_Display'] font-bold text-center mb-12">Gallery</h2>
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                    <div class="relative group cursor-pointer">
+                        <img src="https://public.readdy.ai/ai/img_res/0ae68b46e8784388c5801080d5f731ca.jpg" alt="Beekeeping" class="w-full h-64 object-cover rounded-lg">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-lg">
+                            <i class="ri-zoom-in-line text-white text-3xl"></i>
+                        </div>
+                    </div>
+                    <div class="relative group cursor-pointer">
+                        <img src="https://public.readdy.ai/ai/img_res/2933b0f37d1d25bd8e4524523aca5b58.jpg" alt="Honeycomb" class="w-full h-64 object-cover rounded-lg">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-lg">
+                            <i class="ri-zoom-in-line text-white text-3xl"></i>
+                        </div>
+                    </div>
+                    <div class="relative group cursor-pointer">
+                        <img src="https://public.readdy.ai/ai/img_res/5c119c199b965673dfcbdf7e2902f76d.jpg" alt="Honey Extraction" class="w-full h-64 object-cover rounded-lg">
+                        <div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center rounded-lg">
+                            <i class="ri-zoom-in-line text-white text-3xl"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center mt-8">
+                    <button class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">View All Photos</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-20 bg-[#E9F0E6]">
+            <div class="container mx-auto px-6">
+                <h2 class="text-4xl font-['Playfair_Display'] font-bold text-center mb-12">Contact Us</h2>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div>
+                        <form class="space-y-6">
+                            <div>
+                                <label class="block text-gray-700 mb-2">Name</label>
+                                <input type="text" class="w-full px-4 py-2 rounded border-gray-300 focus:border-primary focus:ring-primary" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-2 rounded border-gray-300 focus:border-primary focus:ring-primary" required>
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Message</label>
+                                <textarea class="w-full px-4 py-2 rounded border-gray-300 focus:border-primary focus:ring-primary" rows="4" required></textarea>
+                            </div>
+                            <button type="submit" class="bg-primary text-white px-8 py-3 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Send Message</button>
+                        </form>
+                    </div>
+                    <div>
+                        <div class="mb-8">
+                            <h3 class="text-xl font-semibold mb-4">Visit Us</h3>
+                            <p class="text-gray-600">Sakshyam Mauri tatha Pashupalan Krishi Farm.</p>
+                            <p class="text-gray-600">Budibazar, Kaski, Pokhara, Nepal</p>
+                        </div>
+                        <div class="mb-8">
+                            <h3 class="text-xl font-semibold mb-4">Contact Info</h3>
+                            <p class="text-gray-600">Phone: +977 9856061173</p>
+                            <p class="text-gray-600">Email: sakshyambeefarming@gmail.com</p>
+                        </div>
+                        <div class="h-64 rounded-lg overflow-hidden">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3516.636092614557!2d84.03698071508215!3d28.1848168!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x399597f1c8785213%3A0x75c0b96a6ccd3b35!2sSakshyam%20bee%20farming%20maurighar%20udhog!5e0!3m2!1sen!2snp!4v1677654321890!5m2!1sen!2snp" 
+                                width="100%" 
+                                height="100%" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="bg-[#2C1810] text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-['Pacifico'] mb-6">Sakshyam Bee Farm</h3>
+                    <p class="text-gray-300">Providing pure and natural honey since 2023. Our commitment to quality and sustainability makes us the trusted choice for honey lovers.</p>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-6">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="#home" class="text-gray-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="#about" class="text-gray-300 hover:text-white transition-colors">About</a></li>
+                        <li><a href="#products" class="text-gray-300 hover:text-white transition-colors">Products</a></li>
+                        <li><a href="#contact" class="text-gray-300 hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-xl font-semibold mb-6">Newsletter</h4>
+                    <p class="text-gray-300 mb-4">Subscribe to our newsletter for updates and special offers.</p>
+                    <form class="flex gap-2">
+                        <input type="email" placeholder="Your email" class="flex-1 px-4 py-2 rounded text-gray-900">
+                        <button type="submit" class="bg-primary text-white px-6 py-2 !rounded-button hover:bg-primary/90 transition-colors whitespace-nowrap">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-300">
+                <p>© 2025 Sakshyam Bee Farming. All rights reserved.</p>
+            </div>
+        </div>
+        <div class="border-t border-grey-700 mt-12 pt-8 text-left text-gray-300">developed by: PTC Nepal, Mob: 9856020179</div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const menuButton = document.querySelector('button.md\\:hidden');
+            const nav = document.querySelector('.md\\:flex');
+            
+            menuButton.addEventListener('click', function() {
+                nav.classList.toggle('hidden');
+            });
+
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    document.querySelector(this.getAttribute('href')).scrollIntoView({
+                        behavior: 'smooth'
+                    });
+                });
+            });
+
+            const galleryImages = document.querySelectorAll('#gallery .group');
+            galleryImages.forEach(image => {
+                image.addEventListener('click', function() {
+                    const img = this.querySelector('img');
+                    const modal = document.createElement('div');
+                    modal.className = 'fixed inset-0 bg-black/90 flex items-center justify-center z-50';
+                    modal.innerHTML = `
+                        <div class="relative max-w-4xl mx-auto p-4">
+                            <img src="${img.src}" alt="${img.alt}" class="max-h-[80vh] w-auto">
+                            <button class="absolute top-4 right-4 text-white text-3xl">×</button>
+                        </div>
+                    `;
+                    document.body.appendChild(modal);
+                    modal.querySelector('button').addEventListener('click', () => modal.remove());
+                    modal.addEventListener('click', (e) => {
+                        if (e.target === modal) modal.remove();
+                    });
+                });
+            });
+
+            const forms = document.querySelectorAll('form');
+            forms.forEach(form => {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const toast = document.createElement('div');
+                    toast.className = 'fixed bottom-4 right-4 bg-green-500 text-white px-6 py-3 rounded shadow-lg';
+                    toast.textContent = 'Thank you! We will get back to you soon.';
+                    document.body.appendChild(toast);
+                    setTimeout(() => toast.remove(), 3000);
+                    form.reset();
+                });
+            });
+        });
+    </script>
+</body>
+</html>
